@@ -10,7 +10,7 @@
         <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" id="BYZ-38-t0r" customClass="LoginVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,7 +106,7 @@
         <!--ChatVC-->
         <scene sceneID="eVP-Bc-fnJ">
             <objects>
-                <viewController id="U4H-nf-z7p" customClass="ChatVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatVC" id="U4H-nf-z7p" customClass="ChatVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="haU-7o-gmx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,6 +128,9 @@
                                         <state key="normal" title="Send">
                                             <color key="titleColor" red="0.98431372549999996" green="0.98431372549999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onSend:" destination="U4H-nf-z7p" eventType="touchUpInside" id="TMg-1B-ctN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -151,7 +154,7 @@
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gM-do-YNz">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gM-do-YNz">
                                                     <rect key="frame" x="16" y="33" width="382" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
@@ -189,8 +192,16 @@
                         <viewLayoutGuide key="safeArea" id="3L0-R7-7ur"/>
                     </view>
                     <navigationItem key="navigationItem" id="hxz-zP-wGu">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Qnw-jN-o6s"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Qnw-jN-o6s">
+                            <connections>
+                                <action selector="onLogout:" destination="U4H-nf-z7p" id="3ZD-Wf-3GR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="messageField" destination="rVG-ji-Ff9" id="xCf-cH-SK7"/>
+                        <outlet property="tableView" destination="GAy-9X-ghf" id="CfR-BH-h9h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ib-rl-c8O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -199,7 +210,7 @@
         <!--Navigation Controller-->
         <scene sceneID="tCB-Aw-292">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="VBK-ae-VkU" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ChatNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="VBK-ae-VkU" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xIp-8X-ExV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
