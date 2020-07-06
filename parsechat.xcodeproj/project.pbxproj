@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,13 +11,15 @@
 		4DBA30ECA8546B55FEB9C850 /* Pods_parsechat_parsechatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74AB0E4F683B5292E305BD3 /* Pods_parsechat_parsechatUITests.framework */; };
 		CE517A2E24B30FF100268657 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE517A2D24B30FF100268657 /* AppDelegate.m */; };
 		CE517A3124B30FF100268657 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE517A3024B30FF100268657 /* SceneDelegate.m */; };
-		CE517A3424B30FF100268657 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE517A3324B30FF100268657 /* ViewController.m */; };
 		CE517A3724B30FF100268657 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE517A3524B30FF100268657 /* Main.storyboard */; };
 		CE517A3924B30FF800268657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE517A3824B30FF800268657 /* Assets.xcassets */; };
 		CE517A3C24B30FF800268657 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE517A3A24B30FF800268657 /* LaunchScreen.storyboard */; };
 		CE517A3F24B30FF800268657 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE517A3E24B30FF800268657 /* main.m */; };
 		CE517A4924B30FF800268657 /* parsechatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE517A4824B30FF800268657 /* parsechatTests.m */; };
 		CE517A5424B30FF800268657 /* parsechatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE517A5324B30FF800268657 /* parsechatUITests.m */; };
+		CE517A6624B3152300268657 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE517A6524B3152300268657 /* LoginVC.m */; };
+		CE517A6924B321A500268657 /* ChatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE517A6824B321A500268657 /* ChatVC.m */; };
+		CE517A6C24B327D400268657 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE517A6B24B327D400268657 /* ChatCell.m */; };
 		D67D52194A700EDCE9426A5F /* Pods_parsechatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1254D65685B1C3A3AAE9B5 /* Pods_parsechatTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,8 +52,6 @@
 		CE517A2D24B30FF100268657 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CE517A2F24B30FF100268657 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		CE517A3024B30FF100268657 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		CE517A3224B30FF100268657 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CE517A3324B30FF100268657 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CE517A3624B30FF100268657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE517A3824B30FF800268657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE517A3B24B30FF800268657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +63,12 @@
 		CE517A4F24B30FF800268657 /* parsechatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = parsechatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE517A5324B30FF800268657 /* parsechatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = parsechatUITests.m; sourceTree = "<group>"; };
 		CE517A5524B30FF800268657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE517A6424B3152300268657 /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		CE517A6524B3152300268657 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		CE517A6724B321A500268657 /* ChatVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatVC.h; sourceTree = "<group>"; };
+		CE517A6824B321A500268657 /* ChatVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatVC.m; sourceTree = "<group>"; };
+		CE517A6A24B327D400268657 /* ChatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
+		CE517A6B24B327D400268657 /* ChatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
 		D14E17C289DFC86C570E4B60 /* Pods-parsechatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parsechatTests.debug.xcconfig"; path = "Target Support Files/Pods-parsechatTests/Pods-parsechatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2C34AE420026B1AB0809F02 /* Pods_parsechat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_parsechat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6523BDBDE2C263D941C447C /* Pods-parsechatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parsechatTests.release.xcconfig"; path = "Target Support Files/Pods-parsechatTests/Pods-parsechatTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,7 +122,6 @@
 				D14E17C289DFC86C570E4B60 /* Pods-parsechatTests.debug.xcconfig */,
 				F6523BDBDE2C263D941C447C /* Pods-parsechatTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -145,12 +150,13 @@
 		CE517A2B24B30FF100268657 /* parsechat */ = {
 			isa = PBXGroup;
 			children = (
+				CE517A6224B3148D00268657 /* Model */,
+				CE517A6124B3148000268657 /* View */,
+				CE517A6324B3149300268657 /* Controller */,
 				CE517A2C24B30FF100268657 /* AppDelegate.h */,
 				CE517A2D24B30FF100268657 /* AppDelegate.m */,
 				CE517A2F24B30FF100268657 /* SceneDelegate.h */,
 				CE517A3024B30FF100268657 /* SceneDelegate.m */,
-				CE517A3224B30FF100268657 /* ViewController.h */,
-				CE517A3324B30FF100268657 /* ViewController.m */,
 				CE517A3524B30FF100268657 /* Main.storyboard */,
 				CE517A3824B30FF800268657 /* Assets.xcassets */,
 				CE517A3A24B30FF800268657 /* LaunchScreen.storyboard */,
@@ -176,6 +182,33 @@
 				CE517A5524B30FF800268657 /* Info.plist */,
 			);
 			path = parsechatUITests;
+			sourceTree = "<group>";
+		};
+		CE517A6124B3148000268657 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE517A6A24B327D400268657 /* ChatCell.h */,
+				CE517A6B24B327D400268657 /* ChatCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE517A6224B3148D00268657 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE517A6324B3149300268657 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE517A6424B3152300268657 /* LoginVC.h */,
+				CE517A6524B3152300268657 /* LoginVC.m */,
+				CE517A6724B321A500268657 /* ChatVC.h */,
+				CE517A6824B321A500268657 /* ChatVC.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,9 +449,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE517A3424B30FF100268657 /* ViewController.m in Sources */,
 				CE517A2E24B30FF100268657 /* AppDelegate.m in Sources */,
 				CE517A3F24B30FF800268657 /* main.m in Sources */,
+				CE517A6624B3152300268657 /* LoginVC.m in Sources */,
+				CE517A6C24B327D400268657 /* ChatCell.m in Sources */,
+				CE517A6924B321A500268657 /* ChatVC.m in Sources */,
 				CE517A3124B30FF100268657 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
